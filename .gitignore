@@ -1,0 +1,4 @@
+/venv
+*.so
+.venv
+/.venv/
