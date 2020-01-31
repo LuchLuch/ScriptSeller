@@ -1,0 +1,19 @@
+body {
+	background: #eee;
+	margin:0px;
+	padding:0px;
+}
+
+img{
+    float:left;
+	margin: 0px 10px 10px 0px;
+}
+
+.all {
+	width: 500px;
+	margin: 0px auto;
+}
+
+h1.center {
+    margin-top:90px;
+}

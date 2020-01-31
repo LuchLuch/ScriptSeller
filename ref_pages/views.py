@@ -10,7 +10,7 @@ def category(request):
 
 def support(request):
     contact_list = Referer.objects.all()
-    paginator = Paginator(contact_list, 25)  # Show 25 contacts per page
+    paginator = Paginator(contact_list, 2)  # Show 25 contacts per page
     page = request.GET.get('page')
     contacts = paginator.get_page(page)
     return render(request, 'ref_pages/index.html', {'contacts': contacts})

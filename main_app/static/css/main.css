@@ -1,0 +1,59 @@
+    html {
+  position: relative;
+  z-index: 0;
+
+    }
+
+
+    canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: -1;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2; /* transparent  */
+      padding: 25px;
+    }
+
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+      #navbar {
+        padding: 15px
+      }
+
+      .btn-lg {
+    margin-top: 5px;
+
+      }
+
+        .btn {
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+              transition:         transform .8s ease-in-out;
+    }
+    .btn:hover {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+
+
+    body::-webkit-scrollbar {
+        width: 0 !important;
+    }

@@ -22,7 +22,7 @@ urlpatterns = [
     path('jet/', include('jet.urls', 'jet')),
     path('admin/', admin.site.urls),
 	path('main_app/', include('main_app.urls')),
-    path('ref_pages/', include('ref_pages.urls')),
+    path('', include('ref_pages.urls')),
 
 ]
 # if settings.DEBUG: # new

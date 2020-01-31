@@ -13,7 +13,7 @@ class Referer(models.Model):
     personal_proxy = models.BooleanField(default=True)
     change_proxy = models.BooleanField(default=True)
     public = models.BooleanField(default=True)
-    img = models.ImageField(upload_to="ref_img/",default='img/q12.jpg')
+    img = models.ImageField(default='img/q12.jpg')
 
 
     def __str__(self):
