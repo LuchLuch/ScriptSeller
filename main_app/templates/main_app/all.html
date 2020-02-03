@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap3 %}
+{% load i18n %}
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
+<canvas id="canvas" > error </canvas>
+<head>
+<title>luch</title>
+
+
+<link rel="stylesheet" href="{% static 'css/zz.css' %}" type="text/css">
+<link rel="icon" href= "{% static 'img/favicon.ico' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> <!-- carusel -->
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> <!-- graph -->
+<!--script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> <!-- graph -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--meta-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<style> img,a[href] { cursor: url(static/img/gun.png), wait; } </style>-->
+
+  </head>
+  <body>
+    <header>
+	{% include "poll/navbar1.html" %}
+</header>
+
+<main role="main">
+    <center><div class="container" id="textTitle">
+      <h1 style="color: white;">Script examples</h1>
+      <p class="card-text" >На этой странице представлены примеры различных скриптов.  </p>
+	  <p class="card-text" >Вы можете приобрести уже готовый скрипт или предоставить нам ТЗ и мы сделаем его вам "под ключ"</p>
+    </div></center> </main>
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <main class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/sb4jjYu1fYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+
+                </div>
+
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+<iframe width="350" height="250" src="https://www.youtube.com/embed/Xh8ITCitUXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+<iframe width="350" height="250" src="https://www.youtube.com/embed/UczFXG0wlZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+<iframe width="350" height="250" src="https://www.youtube.com/embed/Sz10Cm7_qnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+<iframe width="350" height="250" src="https://www.youtube.com/embed/tzmPC8oDDMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/u5dazJpPJu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Заказать" %}</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{% trans "Order" %}</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="card-text"></h5>
+        <p class="card-text1"></p>
+        <p class="card-text1" ></p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="card-text">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">PROJECTS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">ABOUT US</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BLOG</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">AWARDS</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="card-text">Address</h5>
+
+        <ul class="card-text1">
+            <p>
+              <i class="card-text1"></i> New York, NY 10012, US</p>
+
+            <p>
+              <i class="card-text1"></i> pochtamoyapochta123@gmail.com.com</p>
+
+
+            <p>
+              <i class="card-text1"></i> + 01 234 567 88</p>
+
+
+            <p>
+              <i class="card-text1"></i> + 01 234 567 89</p>
+
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="card-text">Follow Us</h5>
+
+	  <div class="">
+			<a href="hhttps://www.instagram.com/share.php?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/tg.png' %}" style="height:34px;width:34px;">
+			</a>
+			<a href="https://twitter.com/share?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/youtube.png' %}" style="height:34px;width:34px;">
+			</a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/fb.png' %}"style="height:34px;width:34px;">
+			</a>
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/linked.png' %}" style="height:34px;width:34px;">
+			</a>
+
+            	<a href="http://127.0.0.1:8000/accounts/login/?mini=true&url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/inst.png' %}" style="height:34px;width:34px;">
+			</a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/twee.png' %}" style="height:34px;width:34px;">
+			</a>
+	  </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script type="text/javascript" src="{% static 'js/graph.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/canvas.js' %}"></script>
+  </body>
+
+<!--<script>-->
+<!--window.onbeforeunload = function() {-->
+<!--  return "Данные не сохранены. Точно перейти?";-->
+<!--};-->
+<!--</script>-->
+
+</html>

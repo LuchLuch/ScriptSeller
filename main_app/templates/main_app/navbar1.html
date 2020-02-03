@@ -1,0 +1,69 @@
+{% load static %}
+{% load bootstrap3 %}
+{% load i18n %}
+
+<nav class="navbar navbar-inverse" style="margin-left: 390px; width: 1140px;">
+  <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+      <div class="container-fluid">
+        <div class="navbar-header">
+    <!--      <a class="navbar-brand" href="/"><img src="{% static 'img/logo.jpg' %}"alt="заказать скрипт"/></a>-->
+            <a class="navbar-brand navbar-custom" href="/" style="color: #6666ff;">Script-Store</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/script">Tools <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li> <a href="/unique">Удаление дубликатов строк</a></li>
+              <li><a href="/calculator">Калькулятор</a></li>
+                <li><a href="/ref_pages">Новости</a></li>
+            </ul>
+          </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/script">Чаты<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li> <a href="/chat_channel">Чат для общения</a></li>
+              <li><a href="/chat">Чат поддержки</a></li>
+              <li><a href="/support">Support / Pagination</a></li>
+            </ul>
+          </li>
+          <li><a href="/script">Заказать скрипт</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+    {% if user.is_superuser %}
+                <li><a href="/admin"><span class="glyphicon glyphicon"></span>Admin panel</a></li>
+    {% endif %}
+
+    {% if request.user.is_authenticated %}
+              <li><a href="/articles/all"><span class="glyphicon glyphicon-user"></span> Личный кабинет</a></li>
+              <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Выйти</a></li>
+    {% else %}
+            <li><a href="hhttps://www.instagram.com/share.php?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+                   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                   target="_blank" rel="nofollow"> <img src="{% static 'img/inst.png' %}" style="height:34px;width:34px;"> </a></li>
+
+            <li><a href="https://twitter.com/share?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+                   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                   target="_blank" rel="nofollow"><img src="{% static 'img/twee.png' %}" style="height:34px;width:34px;"></a></li>
+
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://evileg.com/ru/{{ article.get_absolute_url }}"
+                   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                   target="_blank" rel="nofollow"><img src="{% static 'img/fb.png' %}"style="height:34px;"></a></li>
+
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+                   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                   target="_blank" rel="nofollow"><img src="{% static 'img/link.png' %}" style="height:34px;"></a></li>
+
+    <li><a href="/accounts/login/"><span class="glyphicon glyphicon-log-in"></span> Войти</a></li>
+    <li><a href="/accounts/signup/"><span class="glyphicon glyphicon-sign-up"></span> Регистрация</a></li>
+
+
+    <!--  {% csrf_token %}-->
+    <!--<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />-->
+    <!--  <button type="submit" class="btn btn-danger">Регистрация</button>-->
+    <!--</form>-->
+        </ul>
+      </div>
+
+    {% endif %}
+
+  </div>
+</nav>
