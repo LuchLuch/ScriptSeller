@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+
+{% load admin_static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Luch_admin_manager') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Luch_admin_manager</a></h1>
+{% endblock %}
+
+

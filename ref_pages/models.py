@@ -7,6 +7,7 @@ class Referer(models.Model):
 
     class Meta():
         db_table = "ref_pages_referer"
+    title_link = models.CharField(max_length=200)
     ref_link = models.CharField(max_length=200)
     describe_link = models.TextField()
     free_test = models.BooleanField(default=True)

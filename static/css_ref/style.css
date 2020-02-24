@@ -681,16 +681,15 @@ ref_page height
 .entry.full .entry-img {
   display: table-cell;
   vertical-align: top;
-  background-size: cover;
+    background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 50%;
-  height: 500px;
+  width: 30%;
+
 }
 @media screen and (max-width: 768px) {
   .entry.full .entry-img {
     display: block;
-    width: 100%;
+    width: 50%;
   }
 }
 .entry.full .entry-desc {
