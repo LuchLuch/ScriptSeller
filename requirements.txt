@@ -1,7 +1,7 @@
 redis
 nltk==3.4.5
 numpy==1.17.4
-Django==2.2.7
+Django==2.2.18
 django-allauth==0.40.0
 tflearn==0.3.2
 websocket==0.2.1
